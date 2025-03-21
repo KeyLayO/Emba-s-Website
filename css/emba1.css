@@ -1,0 +1,66 @@
+body {
+  background-image: url("../media/images/love.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  color: hsl(240, 100%, 50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 2px solid hsl(0, 0%, 0%);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px 0;
+  display: inline-block;
+}
+
+.content-container {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+  width: 75%;
+}
+
+p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: left;
+}
+
+.links-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.links-container a {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  text-decoration: none;
+  border: 2px solid hsl(0, 0%, 0%);
+  border-radius: 5px;
+  color: white;
+  background: hsl(240, 100%, 50%);
+}
+
+.links-container a:hover {
+  background-color: hsl(240, 100%, 30%);
+  transition: 0.5s;
+}
+
+.links-container a:active {
+  background-color: hsl(240, 100%, 20%);
+}

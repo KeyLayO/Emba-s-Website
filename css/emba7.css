@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: grey;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h1 {
+  color: white;
+}
+
+table,
+tr,
+th,
+td {
+  border: 3px solid white;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 5px;
+}
+
+tr:nth-child(even) {
+  background-color: yellow;
+}
+
+tr:nth-child(odd) {
+  background-color: black;
+  color: yellow;
+}
+
+a {
+  border: 2px solid black;
+  border-radius: 20px;
+  margin-top: 10px;
+  padding: 20px;
+  background-color: yellow;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: hsl(60, 100%, 40%);
+}
+
+a:active {
+  background-color: hsl(60, 100%, 30%);
+}
+
+th:hover,
+td:hover {
+  background-color: grey;
+  cursor: default;
+}
