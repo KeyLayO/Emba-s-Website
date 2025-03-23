@@ -26,7 +26,7 @@ header {
   width: 20%;
   border: 1px solid black;
   background-color: beige;
-  flex-direction: column
+  flex-direction: column;
 }
 
 .links-container {
@@ -66,7 +66,7 @@ header {
   gap: 20px;
 }
 
-.image-container img{
+.image-container img {
   width: 200px;
   border: 2px solid black;
 }
@@ -93,4 +93,3 @@ footer {
   height: 10vh;
   background-color: bisque;
 }
-
