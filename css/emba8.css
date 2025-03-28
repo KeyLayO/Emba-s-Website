@@ -2,15 +2,15 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   border: 1px solid black;
   height: 10vh;
-  background-color: bisque;
+  background-color: hsl(0, 0%, 15%);
+  color: yellow;
 }
 
 .main-container {
@@ -25,7 +25,7 @@ header {
   align-items: center;
   width: 20%;
   border: 1px solid black;
-  background-color: beige;
+  background-color: yellow;
   flex-direction: column;
 }
 
@@ -39,8 +39,14 @@ header {
   border-radius: 15px;
   margin: 10px 0;
   padding: 20px;
-  background-color: brown;
-  color: white;
+  background-color: hsl(0, 0%, 15%);
+  color: yellow;
+  text-decoration: none;
+}
+
+.links-container a:hover {
+  background-color: yellow;
+  color: hsl(0, 0%, 15%);
 }
 
 .middle {
@@ -79,7 +85,11 @@ header {
   flex-direction: column;
   width: 20%;
   border: 1px solid black;
-  background-color: beige;
+  background-color: yellow;
+}
+
+.about-me-container {
+  text-align: center;
 }
 
 .right a {
@@ -87,10 +97,46 @@ header {
 }
 
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   border: 1px solid black;
   height: 10vh;
-  background-color: bisque;
+  background-color: hsl(0, 0%, 15%);
+  color: yellow;
+}
+
+@media (max-width: 800px) {
+  .main-container {
+    flex-direction: column;
+    height: 80%;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .links-container {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .links-container a {
+    padding: 10px;
+  }
+
+  .middle {
+    width: 100%;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .about-me-container {
+    display: flex;
+    gap: 20px;
+  }
+
+  footer {
+    height: 10%;
+  }
 }
