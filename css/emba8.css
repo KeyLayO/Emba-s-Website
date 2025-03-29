@@ -13,6 +13,11 @@ header {
   color: yellow;
 }
 
+header:hover {
+  background-color: yellow;
+  color: hsl(0, 0%, 15%);
+}
+
 .main-container {
   display: flex;
   border: 1px solid black;
@@ -27,6 +32,7 @@ header {
   border: 1px solid black;
   background-color: yellow;
   flex-direction: column;
+  color: hsl(0, 0%, 15%);
 }
 
 .links-container {
@@ -49,6 +55,10 @@ header {
   color: hsl(0, 0%, 15%);
 }
 
+.links-container a:active {
+  background-color: hsl(60, 100%, 45%);
+}
+
 .middle {
   display: flex;
   justify-content: center;
@@ -59,9 +69,6 @@ header {
   background-image: url("../media/images/background1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.middle h2 {
   color: white;
 }
 
@@ -86,6 +93,7 @@ header {
   width: 20%;
   border: 1px solid black;
   background-color: yellow;
+  color: hsl(0, 0%, 15%);
 }
 
 .about-me-container {
@@ -94,6 +102,11 @@ header {
 
 .right a {
   text-decoration: none;
+  color: hsl(0, 0%, 15%);
+}
+
+.right a:hover {
+  color: hsl(0, 0%, 50%);
 }
 
 footer {
@@ -102,6 +115,11 @@ footer {
   height: 10vh;
   background-color: hsl(0, 0%, 15%);
   color: yellow;
+}
+
+footer:hover {
+  background-color: yellow;
+  color: hsl(0, 0%, 15%);
 }
 
 @media (max-width: 800px) {
